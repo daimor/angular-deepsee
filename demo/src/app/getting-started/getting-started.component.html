@@ -1,0 +1,59 @@
+<ngbd-content-wrapper component="Getting Started">
+  <h3>
+    Dependencies
+  </h3>
+  <p>
+    This repository contains a set of native Angular directives based on Bootstrap's markup and CSS.
+    As a result no dependency on jQuery or Bootstrap's JavaScript is required. The only required dependencies are:
+  </p>
+  <ul>
+    <li>
+      <a href="https://angular.io" target="_blank">Angular</a> (<em>requires</em> Angular version 4 or higher, tested with 4.0.3)
+    </li>
+    <li>
+      <a href="http://v4-alpha.getbootstrap.com" target="_blank">Bootstrap CSS</a> (tested with 4.0.0-alpha.6)
+    </li>
+  </ul>
+
+  <h3>
+    Supported browsers
+  </h3>
+  <p>We strive to support the same browsers and versions as supported by both Bootstrap 4 and Angular, whichever is more restrictive. Check browser support notes for
+    <a href="https://angular.io/docs/ts/latest/guide/browser-support.html" target="_blank">Angular</a> and
+    <a href="http://v4-alpha.getbootstrap.com/getting-started/browsers-devices/" target="_blank">Bootstrap</a>.
+  </p>
+  <p>Our code is automatically tested on all the supported browsers.</p>
+
+  <h3>
+    Installation
+  </h3>
+  <p>After installing the above dependencies, install <code>angular-deepsee</code> via: <br><code>npm install --save angular-deepsee</code></p>
+
+  <p>Once installed you need to import our main module.</p>
+  <pre>import &#123;NgbDeepSeeModule} from 'angular-deepsee';</pre>
+  <p>
+    The only remaining part is to list the imported module in your root module and any additional application modules that make use
+    of the components in this library. The exact method will be slightly different for the root (top-level) module for which you
+    should end up with the code similar to (notice <code>NgbDeepSeeModule.forRoot()</code>):
+  </p>
+  <pre>import &#123;NgbDeepSeeModule} from 'angular-deepsee';
+
+@NgModule(&#123;
+  declarations: [AppComponent, ...],
+  imports: [NgbDeepSeeModule.forRoot(), ...],
+  bootstrap: [AppComponent]
+})
+export class AppModule &#123;
+}</pre>
+
+  <p>Other modules in your application can simply import <code>NgbDeepSeeModule</code>:</p>
+  <pre>import &#123;NgbDeepSeeModule} from 'angular-deepsee';
+
+@NgModule(&#123;
+  declarations: [OtherComponent, ...],
+  imports: [NgbDeepSeeModule, ...]
+})
+export class OtherModule &#123;
+}</pre>
+
+</ngbd-content-wrapper>
