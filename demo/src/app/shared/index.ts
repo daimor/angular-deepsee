@@ -12,6 +12,8 @@ import {Analytics} from './analytics/analytics';
 
 export {componentsList} from './side-nav/side-nav.component';
 
+import { NgbDeepSeeModule } from 'angular-deepsee';
+
 @NgModule({
   imports: [CommonModule, RouterModule],
   exports: [
@@ -20,6 +22,7 @@ export {componentsList} from './side-nav/side-nav.component';
     ContentWrapper,
     SideNavComponent,
     NgbModule,
+    NgbDeepSeeModule,
     FormsModule,
     ReactiveFormsModule,
     JsonpModule
