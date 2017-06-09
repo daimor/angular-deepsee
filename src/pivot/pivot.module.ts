@@ -4,9 +4,10 @@ import { CommonModule } from '@angular/common';
 import { NgbPivot } from './pivot';
 import { NgbPivotConfig } from './pivot-config';
 
-const NGB_pivot_DIRECTIVES = [NgbPivot];
+export { NgbPivot } from './pivot';
+export { NgbPivotConfig } from './pivot-config';
 
-@NgModule({ declarations: NGB_pivot_DIRECTIVES, exports: NGB_pivot_DIRECTIVES, imports: [CommonModule] })
-export class NgbpivotModule {
-  static forRoot(): ModuleWithProviders { return { ngModule: NgbpivotModule, providers: [NgbPivotConfig] }; }
+@NgModule({ declarations: [NgbPivot], exports: [NgbPivot], imports: [CommonModule], entryComponents: [NgbPivot] })
+export class NgbPivotModule {
+  static forRoot(): ModuleWithProviders { return { ngModule: NgbPivotModule, providers: [NgbPivotConfig] }; }
 }
