@@ -5,6 +5,9 @@ import { DEMO_SNIPPETS } from './demos';
   selector: 'ngbd-pivot',
   template: `
     <ngbd-content-wrapper component="Pivot">
+      <ngbd-example-box demoTitle="Pivot" [snippets]="snippets" component="pivot" demo="basic">
+        <ngbd-pivot-basic></ngbd-pivot-basic>
+      </ngbd-example-box>
     </ngbd-content-wrapper>
 `
 })

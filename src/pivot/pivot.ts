@@ -1,26 +1,31 @@
 import {
-  AfterContentChecked,
   Component,
-  ContentChild,
-  ContentChildren,
-  Directive,
-  EventEmitter,
+  ElementRef,
   Input,
-  Output,
-  QueryList,
-  TemplateRef
+  OnInit,
+  AfterViewInit
 } from '@angular/core';
 
-import {NgbPivotConfig} from './pivot-config';
+import { NgbPivotConfig } from './pivot-config';
 
 @Component({
   selector: 'ngb-deepsee-pivot',
-  exportAs: 'ngbDeepseePivot',
-  template: `
-`
+  exportAs: 'ngbDeepSeePivot',
+  template: ``
 })
-export class NgbPivot {
+export class NgbPivot implements OnInit, AfterViewInit {
 
-  constructor(config: NgbPivotConfig) {
+  @Input('data') sourceData: any;
+
+  constructor(
+    config: NgbPivotConfig,
+    private el: ElementRef
+  ) {
+  }
+
+  ngOnInit() {
+  }
+
+  ngAfterViewInit() {
   }
 }
