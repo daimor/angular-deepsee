@@ -1,21 +1,22 @@
-var path = require('path');
-var webpack = require('webpack');
+const path = require('path');
+const webpack = require('webpack');
 
 // Webpack Plugins
-var CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;
-var autoprefixer = require('autoprefixer');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
-var aotplugin = require('@ngtools/webpack');
+const CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;
+const autoprefixer = require('autoprefixer');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const aotplugin = require('@ngtools/webpack');
 
 /**
  * Env
  * Get npm lifecycle event to identify the environment
  */
-var ENV = process.env.MODE;
-var isProd = ENV === 'build';
-var nodeModules = path.join(process.cwd(), 'node_modules');
+const ENV = process.env.MODE;
+const isProd = ENV === 'build';
+const nodeModules = path.join(process.cwd(), 'node_modules');
 
 module.exports = function makeWebpackConfig() {
   /**
@@ -70,7 +71,7 @@ module.exports = function makeWebpackConfig() {
     extensions: ['.ts', '.js', '.css', '.scss', '.html'],
 
     alias: {
-      'angular-deepsee': root('src/index.ts')
+      'angular-deepsee': root('src')
     }
   };
 
@@ -133,6 +134,14 @@ module.exports = function makeWebpackConfig() {
    * List: http://webpack.github.io/docs/list-of-plugins.html
    */
   config.plugins = [
+    // Clean output dist folder
+    new CleanWebpackPlugin([
+      "dist"
+    ], {
+      root: root('demo'),
+      verbose: true
+    }),
+
     // Define env variables to help with builds
     // Reference: https://webpack.github.io/docs/list-of-plugins.html#defineplugin
     new webpack.DefinePlugin({
@@ -228,6 +237,13 @@ module.exports = function makeWebpackConfig() {
   config.devServer = {
     contentBase: 'demo/src/public',
     historyApiFallback: true,
+    proxy: {
+      '/MDX2JSON': {
+        target: 'http://localhost:57775/'
+      },
+      changeOrigin: true,
+      secure: false
+    },
     stats: 'minimal' // none (or false), errors-only, minimal, normal (or true) and verbose
   };
 

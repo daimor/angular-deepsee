@@ -1,0 +1,14 @@
+@import "~lightpivottable/source/css/LightPivot.css";
+
+// .lpt > .tableContainer {
+//   // position: initial;
+// }
+
+.lpt .lpt-topSection, .lpt .lpt-bottomSection {
+    border-right: none;
+}
+
+.ngb-deepsee-pivot {
+  height: 300px;
+  display: block;
+}

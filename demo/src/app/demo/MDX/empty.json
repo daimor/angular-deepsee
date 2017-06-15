@@ -1,0 +1,24 @@
+{
+	"Cols":[ {
+			"tuples":[
+			]
+		}, {
+			"tuples":[
+			]
+		}
+	],
+	"Data":[
+	],
+	"Info": {
+		"colCount":0,
+		"colKey":"ru3775637725",
+		"cubeClass":"DeepSee.Model.PatientsCube",
+		"cubeName":"Patients",
+		"decimalSeparator":".",
+		"numericGroupSeparator":",",
+		"numericGroupSize":3,
+		"queryKey":"ru292992440",
+		"rowCount":0,
+		"rowKey":"ru372096449"
+	}
+}

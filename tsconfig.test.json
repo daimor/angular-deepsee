@@ -1,0 +1,18 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "ES5",
+    "module": "commonjs",
+    "types": [
+      "jasmine",
+      "node",
+      "lightpivottable"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "demo"
+  ]
+}

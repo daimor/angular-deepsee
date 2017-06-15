@@ -8,6 +8,9 @@ import { DEMO_SNIPPETS } from './demos';
       <ngbd-example-box demoTitle="Pivot" [snippets]="snippets" component="pivot" demo="basic">
         <ngbd-pivot-basic></ngbd-pivot-basic>
       </ngbd-example-box>
+      <ngbd-example-box demoTitle="Pivot" [snippets]="snippets" component="pivot" demo="twolevel">
+        <ngbd-pivot-twolevel></ngbd-pivot-twolevel>
+      </ngbd-example-box>
     </ngbd-content-wrapper>
 `
 })

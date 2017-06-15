@@ -1,4 +1,5 @@
 // styles in src/style directory are applied to the whole page
+@import "~angular-deepsee/style/main.scss";
 
 @mixin text-stroke-horizontal($width: 4px, $color: white) {
   $text-shadow: ();

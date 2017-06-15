@@ -1,0 +1,217 @@
+{
+	"Cols":[ {
+			"tuples":[ {
+					"caption":"Female",
+					"children":[ {
+							"caption":"Patient Count",
+							"dimension":"Patient Count",
+							"format":"#,###",
+							"info":"",
+							"path":"[GenD].[H1].[Gender].&[Female]",
+							"title":"",
+							"total":"COUNT",
+							"type":"msr",
+							"valueID":"",
+							"vis":1
+						}, {
+							"caption":"Avg Allergy Count",
+							"dimension":"Avg Allergy Count",
+							"format":"#,###.##",
+							"info":"",
+							"path":"[GenD].[H1].[Gender].&[Female]",
+							"title":"",
+							"total":"AVG",
+							"type":"msr",
+							"valueID":"",
+							"vis":1
+						}
+					],
+					"dimension":"Gender",
+					"format":"",
+					"info":"",
+					"path":"[GenD].[H1].[Gender].&[Female]",
+					"title":"",
+					"total":"",
+					"type":"mbr",
+					"valueID":2,
+					"vis":0
+				}, {
+					"caption":"Male",
+					"children":[ {
+							"caption":"Patient Count",
+							"dimension":"Patient Count",
+							"format":"#,###",
+							"info":"",
+							"path":"[GenD].[H1].[Gender].&[Male]",
+							"title":"",
+							"total":"COUNT",
+							"type":"msr",
+							"valueID":"",
+							"vis":1
+						}, {
+							"caption":"Avg Allergy Count",
+							"dimension":"Avg Allergy Count",
+							"format":"#,###.##",
+							"info":"",
+							"path":"[GenD].[H1].[Gender].&[Male]",
+							"title":"",
+							"total":"AVG",
+							"type":"msr",
+							"valueID":"",
+							"vis":1
+						}
+					],
+					"dimension":"Gender",
+					"format":"",
+					"info":"",
+					"path":"[GenD].[H1].[Gender].&[Male]",
+					"title":"",
+					"total":"",
+					"type":"mbr",
+					"valueID":1,
+					"vis":0
+				}
+			]
+		}, {
+			"tuples":[ {
+					"caption":"60+",
+					"children":[ {
+							"caption":80,
+							"dimension":"Age",
+							"format":"",
+							"info":"",
+							"path":"([AgeD].[H1].[Age Group].&[60+],[AgeD].[H1].[Age].&[80])",
+							"title":"",
+							"total":"",
+							"type":"mbr",
+							"valueID":14,
+							"vis":1
+						}, {
+							"caption":81,
+							"dimension":"Age",
+							"format":"",
+							"info":"",
+							"path":"([AgeD].[H1].[Age Group].&[60+],[AgeD].[H1].[Age].&[81])",
+							"title":"",
+							"total":"",
+							"type":"mbr",
+							"valueID":56,
+							"vis":1
+						}, {
+							"caption":82,
+							"dimension":"Age",
+							"format":"",
+							"info":"",
+							"path":"([AgeD].[H1].[Age Group].&[60+],[AgeD].[H1].[Age].&[82])",
+							"title":"",
+							"total":"",
+							"type":"mbr",
+							"valueID":79,
+							"vis":1
+						}, {
+							"caption":83,
+							"dimension":"Age",
+							"format":"",
+							"info":"",
+							"path":"([AgeD].[H1].[Age Group].&[60+],[AgeD].[H1].[Age].&[83])",
+							"title":"",
+							"total":"",
+							"type":"mbr",
+							"valueID":90,
+							"vis":1
+						}, {
+							"caption":84,
+							"dimension":"Age",
+							"format":"",
+							"info":"",
+							"path":"([AgeD].[H1].[Age Group].&[60+],[AgeD].[H1].[Age].&[84])",
+							"title":"",
+							"total":"",
+							"type":"mbr",
+							"valueID":88,
+							"vis":1
+						}, {
+							"caption":87,
+							"dimension":"Age",
+							"format":"",
+							"info":"",
+							"path":"([AgeD].[H1].[Age Group].&[60+],[AgeD].[H1].[Age].&[87])",
+							"title":"",
+							"total":"",
+							"type":"mbr",
+							"valueID":81,
+							"vis":1
+						}, {
+							"caption":88,
+							"dimension":"Age",
+							"format":"",
+							"info":"",
+							"path":"([AgeD].[H1].[Age Group].&[60+],[AgeD].[H1].[Age].&[88])",
+							"title":"",
+							"total":"",
+							"type":"mbr",
+							"valueID":89,
+							"vis":1
+						}, {
+							"caption":89,
+							"dimension":"Age",
+							"format":"",
+							"info":"",
+							"path":"([AgeD].[H1].[Age Group].&[60+],[AgeD].[H1].[Age].&[89])",
+							"title":"",
+							"total":"",
+							"type":"mbr",
+							"valueID":87,
+							"vis":1
+						}, {
+							"caption":91,
+							"dimension":"Age",
+							"format":"",
+							"info":"",
+							"path":"([AgeD].[H1].[Age Group].&[60+],[AgeD].[H1].[Age].&[91])",
+							"title":"",
+							"total":"",
+							"type":"mbr",
+							"valueID":75,
+							"vis":1
+						}, {
+							"caption":94,
+							"dimension":"Age",
+							"format":"",
+							"info":"",
+							"path":"([AgeD].[H1].[Age Group].&[60+],[AgeD].[H1].[Age].&[94])",
+							"title":"",
+							"total":"",
+							"type":"mbr",
+							"valueID":85,
+							"vis":1
+						}
+					],
+					"dimension":"Age Group",
+					"format":"",
+					"info":"",
+					"path":"[AgeD].[H1].[Age Group].&[60+]",
+					"title":"",
+					"total":"",
+					"type":"mbr",
+					"valueID":3,
+					"vis":0
+				}
+			]
+		}
+	],
+	"Data":[3,1,"","",3,1,3,1,4,2,1,2,2,1,1,2,1,"",2,"",1,"",1,1,1,1,1,0,2,0,2,"",1,"","","",3,"","",""
+	],
+	"Info": {
+		"colCount":10,
+		"colKey":"ru1819849271",
+		"cubeClass":"DeepSee.Model.PatientsCube",
+		"cubeName":"Patients",
+		"decimalSeparator":".",
+		"numericGroupSeparator":",",
+		"numericGroupSize":3,
+		"queryKey":"ru980554827",
+		"rowCount":4,
+		"rowKey":"ru3898220953"
+	}
+}

@@ -9,6 +9,11 @@
     "outDir": "temp",
     "sourceMap": true,
     "baseUrl": "./node_modules",
+    "types": [
+      "node",
+      "jasmine",
+      "lightpivottable"
+    ],
     "paths": {
       "angular-deepsee": ["../src/index"]
     }

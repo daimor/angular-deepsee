@@ -1,14 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'ngbd-pivot-basic',
   templateUrl: 'pivot-basic.html'
 })
-export class NgbdPivotBasic {
+export class NgbdPivotBasic implements OnInit {
 
-  data: any;
+  pivotName: string;
 
   constructor() {
-    this.data = require('./data.json');
+  }
+
+  ngOnInit() {
+    this.pivotName = 'Use in Dashboards\/Patients by Favorite Color.pivot';
   }
 }

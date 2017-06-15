@@ -7,6 +7,9 @@ export {
   NgbPivotConfig
 } from './pivot/pivot.module';
 
+// import { DeepSeeService } from './deepsee.service';
+// export { DeepSeeService } from './deepsee.service';
+
 const NGB_MODULES = [
   NgbPivotModule
 ];
@@ -16,6 +19,7 @@ const NGB_MODULES = [
     NgbPivotModule.forRoot()
   ],
   exports: [
+    // DeepSeeService,
     ...NGB_MODULES
   ]
 })
