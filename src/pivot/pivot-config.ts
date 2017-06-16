@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-const LightPivotTable = require('lightpivottable');
+const LightPivotTable = require('deepsee-lightpivottable');
 
 @Injectable()
 export class NgbPivotConfig {

@@ -12,7 +12,7 @@
     "types": [
       "node",
       "jasmine",
-      "lightpivottable"
+      "deepsee-lightpivottable"
     ],
     "paths": {
       "angular-deepsee": ["../src/index"]

@@ -11,9 +11,9 @@ import { Http, RequestOptions, Headers } from '@angular/http';
 
 import { NgbPivotConfig } from './pivot-config';
 
-const LightPivotTable = require('lightpivottable');
-const DataSource = require('lightpivottable/source/js/DataSource');
-const PivotLocale = require('lightpivottable/source/js/PivotLocale');
+const LightPivotTable = require('deepsee-lightpivottable');
+const DataSource = require('deepsee-lightpivottable/source/js/DataSource');
+const PivotLocale = require('deepsee-lightpivottable/source/js/PivotLocale');
 
 @Component({
   selector: 'ngb-deepsee-pivot',
