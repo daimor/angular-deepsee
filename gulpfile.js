@@ -2,6 +2,8 @@ const asyncDone = require('async-done');
 const gulp = require('gulp');
 const gutil = require('gulp-util');
 const gulpFile = require('gulp-file');
+const shell = require('gulp-shell');
+const ghPages = require('gulp-gh-pages');
 const path = require('path');
 const os = require('os');
 const exec = require('child_process').exec;
@@ -188,3 +190,15 @@ gulp.task('scss', done => {
 gulp.task('build', done => {
   runSequence('test', 'clean:build', 'ngc', 'umd', 'npm', done);
 });
+
+gulp.task(
+    'build:demo', ['clean:demo'],
+    shell.task(['webpack --config webpack.demo.js --progress --profile --bail'], {env: {MODE: 'build'}}));
+
+gulp.task('demo-push', function() {
+  return gulp.src(PATHS.demoDist)
+      .pipe(ghPages({remoteUrl: "git@github.com:daimor/angular-deepsee.git", branch: "gh-pages"}));
+});
+
+gulp.task(
+    'deploy-demo', function(done) { runSequence('clean:demo', 'build:demo', 'demo-push', 'clean:demo-cache', done); });

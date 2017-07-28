@@ -56,7 +56,7 @@ module.exports = function makeWebpackConfig() {
    */
   config.output = {
     path: root('demo', 'dist'),
-    publicPath: '/',
+    publicPath: isProd ? '/angular-deepsee/' : '/',
     filename: isProd ? 'js/[name].[hash].js' : 'js/[name].js',
     chunkFilename: isProd ? '[id].[hash].chunk.js' : '[id].chunk.js'
   };

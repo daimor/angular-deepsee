@@ -11,6 +11,8 @@ export class AppComponent implements OnInit {
 
   components = componentsList;
 
+  navbarCollapsed: boolean;
+
   constructor() { }
 
   ngOnInit(): void { }

@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "lib": ["es2015", "dom"],
+    "module": "es2015",
+    "moduleResolution": "node",
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noEmitOnError": true,
+    "outDir": "temp",
+    "sourceMap": true,
+    "baseUrl": "./node_modules",
+    "types": [
+      "node",
+      "jasmine",
+      "deepsee-lightpivottable"
+    ],
+    "paths": {
+      "angular-deepsee": ["../src/index"]
+    }
+  },
+  "include": [
+    "./demo/src/main.ts"
+  ],
+  "angularCompilerOptions": {
+    "strictMetadataEmit": true
+  }
+}
